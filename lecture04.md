@@ -2,23 +2,23 @@
 
 ## VPCの作成
 
-![VPCの作成](image/VPC作成.png)
+![VPCの作成](image2/VPC作成.png)
 
 ## EC2の作成
 
-![EC2の作成](image/EC2作成.png)
+![EC2の作成](image2/EC2作成.png)
 
 ## RDSの作成
 
-![RDSの作成](image/RDS作成.png)
+![RDSの作成](image2/RDS作成.png)
 
 EC2にSSHクライアントで接続
 
-![EC2に接続](image/RDSに接続.png)
+![EC2に接続](image2/RDSに接続.png)
 
 RDSに接続
 
-![RDSに接続](image/RDSに接続.png)
+![RDSに接続](image2/RDSに接続.png)
 
 ##　学んだこと
 
