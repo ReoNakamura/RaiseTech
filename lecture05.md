@@ -1,24 +1,24 @@
 # 第5回課題
 * 組み込みサーバーで起動
-![puma駆動](lecture05/puma%E8%B5%B7%E5%8B%95.png)
-![puma起動確認](lecture05/puma%E8%B5%B7%E5%8B%95%E7%A2%BA%E8%AA%8D.png)
+![puma駆動](lecture05/puma起動.png)
+![puma起動確認](lecture05/puma起動確認.png)
 * nginxとunicornで分けてデプロイ
-![nginxとunicorn起動](lecture05/nginx%E3%81%A8unicorn%E3%81%AE%E8%B5%B7%E5%8B%95.png)
-![接続確認](lecture05/nginx%E3%81%AE%E6%8E%A5%E7%B6%9A%E7%A2%BA%E8%AA%8D.png)
+![nginxとunicorn起動](lecture05/nginxとunicornの起動.png)
+![接続確認](lecture05/nginxの接続確認.png)
 
-![デプロイ確認](lecture05/nginx%E3%81%A8unicorn%E3%81%A7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4.png)
+![デプロイ確認](lecture05/nginxとunicornでデプロイ.png)
 
 # ALBの導入
 * ALBを経由してサンプルアプリのデプロイ
-![ALB経由](lecture05/ALB%E7%B5%8C%E7%94%B1%E3%81%A7%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4.png)
+![ALB経由](lecture05/ALB経由でデプロイ.png)
 # アプリのデータ保存先をS3に変更
 * データの保存先をS3した
-![S3にデータを保存](lecture05/S3%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%BF%9D%E5%AD%98%EF%BC%91.png)
-![S3にデータを保存](lecture05/S3%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%BF%9D%E5%AD%982.png)
-![S3にでーたを保存](lecture05/S3%E3%81%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%BF%9D%E5%AD%98%EF%BC%93.png)
+![S3にデータを保存](lecture05/S3にデータを保存１.png)
+![S3にデータを保存](lecture05/S3にデータを保存2.png)
+![S3にでーたを保存](lecture05/S3にデータを保存３.png)
 
 # インフラ構成図
-![構成図](<lecture05/AWS 構成図.png>)
+![構成図](lecture05/AWS構成図.drawio.png)
 
 ## 学んだこと
 課題を終えるのにすごく時間がかかった。  
