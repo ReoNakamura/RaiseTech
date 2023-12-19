@@ -25,7 +25,8 @@ Resources:
       GroupName: CfEc2TestSecurityGroup
       GroupDescription: CfTestSecurityGroup
       VpcId: 
-        !ImportValue VPC1
+        Fn::ImportValue:
+          Fn::Sub: ${NameBase}-VPC-ID
       Tags:
         - Key: Name
           Value: CfEc2TestSecurityGroup
@@ -53,7 +54,8 @@ Resources:
       GroupName: CfRDSTestSecurityGroup
       GroupDescription: CfRDSTestSecurityGroup
       VpcId: 
-        !ImportValue VPC1
+        Fn::ImportValue:
+          Fn::Sub: ${NameBase}-VPC-ID
       Tags:
         - Key: Name
           Value: CfRDSTestSecurityGroup
@@ -71,7 +73,8 @@ Resources:
     Type: AWS::EC2::NetworkInterface
     Properties:
       SubnetId: 
-        !ImportValue pubsub1a
+        Fn::ImportValue:
+           Fn::Sub: ${NameBase}-pubsub1a-name
       GroupSet: 
         - !Ref CfEc2TestSecurityGroup
 
@@ -107,8 +110,10 @@ Resources:
           Value: !Sub ${NameBase}-alb
       IpAddressType: ipv4
       Subnets: 
-        - !ImportValue pubsub1a
-        - !ImportValue pubsub1c
+        -  Fn::ImportValue:
+             Fn::Sub: ${NameBase}-pubsub1a-name
+        -  Fn::ImportValue:
+             Fn::Sub: ${NameBase}-pubsub1c-name
       SecurityGroups: 
         - !Ref CfEc2TestSecurityGroup
 
@@ -123,7 +128,9 @@ Resources:
       Protocol: HTTP
       Matcher:
         HttpCode: '200'
-      VpcId: !ImportValue VPC1
+      VpcId: 
+        Fn::ImportValue:
+          Fn::Sub: ${NameBase}-VPC-ID
       TargetType: instance
       Targets:
         - Id: !Ref CfTestEC2Instance 
@@ -146,9 +153,9 @@ Resources:
       DBSubnetGroupName: TestRDSSubnetGroup
       SubnetIds: 
       - Fn::ImportValue: 
-         Fn::Sub: ${NameBase}-privateSubnet2a
+         Fn::Sub: ${NameBase}-privateSubnet2a-name
       - Fn::ImportValue:
-         Fn::Sub: ${NameBase}-privateSubnet2c
+         Fn::Sub: ${NameBase}-privateSubnet2c-name
       Tags: 
       - 
         Key: Name
