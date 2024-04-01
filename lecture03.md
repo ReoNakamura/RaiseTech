@@ -9,8 +9,8 @@
 
 * APサーバーの終了していると、アプリは起動出来ない。再びAPサーバーを起動させるとアプリを起動出来た。
   
-![AP停止時](image/AP停止時.png) 
-![AP起動時](image/AP起動時.png)
+![AP停止時](image/lecture03/AP停止時.png) 
+![AP起動時](image/lecture03/AP起動時.png)
 
 
 ## DBサーバーの名前、バージョン
@@ -22,7 +22,7 @@
 
 * DBサーバーを終了すると、アプリは動かない
 
-![DBサーバー終了後](image/mysql停止時.png)
+![DBサーバー終了後](image/lecture03/mysql停止時.png)
  
 
 ## railsの構成管理ツール
