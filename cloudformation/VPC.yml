@@ -24,46 +24,46 @@ Resources:
    pubsub1a:
      Type: AWS::EC2::Subnet
      Properties:
-       AvailabilityZone: ap-northeast-1a
+       AvailabilityZone: !Select [0, !GetAZs '']
        VpcId: !Ref VPC1
        CidrBlock: 10.0.1.0/24
        MapPublicIpOnLaunch: true
        Tags:
          - Key: Name
-           Value: !Sub Subnet-Public1a-${NameBase}
+           Value: !Sub Subnet-Public1-${NameBase}
         
    pubsub1c:
       Type: AWS::EC2::Subnet
       Properties:
-        AvailabilityZone: ap-northeast-1c
+        AvailabilityZone: !Select [0, !GetAZs '']
         VpcId: !Ref VPC1
         CidrBlock: 10.0.2.0/24
         MapPublicIpOnLaunch: true
         Tags:
           - Key: Name
-            Value: !Sub Subnet-Public2c-${NameBase}
+            Value: !Sub Subnet-Public2-${NameBase}
 
    privateSubnet2a:
      Type: AWS::EC2::Subnet
      Properties:
-       AvailabilityZone: ap-northeast-1a
+       AvailabilityZone: !Select [0, !GetAZs '']
        VpcId: !Ref VPC1
        CidrBlock: 10.0.3.0/24
        MapPublicIpOnLaunch: false
        Tags:
          - Key: Name
-           Value: !Sub Subnet-private1a-${NameBase}
+           Value: !Sub Subnet-private1-${NameBase}
 
    privateSubnet2c:
      Type: AWS::EC2::Subnet
      Properties:
-       AvailabilityZone: ap-northeast-1c
+       AvailabilityZone: !Select [0, !GetAZs '']
        VpcId: !Ref VPC1
        CidrBlock: 10.0.4.0/24
        MapPublicIpOnLaunch: false
        Tags:
          - Key: Name
-           Value: !Sub Subnet-private2c-${NameBase}        
+           Value: !Sub Subnet-private2-${NameBase}        
 
    TestInternetGatway:
      Type: AWS::EC2::InternetGateway
