@@ -143,11 +143,10 @@ Outputs:
   privateSubnet2a:    
     Value: !Ref privateSubnet2a
     Export:
-      Name: 
-        Fn::Sub: ${NameBase}-privateSubnet2a
+      Name: !Sub ${NameBase}-privateSubnet2a
 
   privateSubnet2c: 
    Value: !Ref privateSubnet2c
    Export:
-     Name: 
-       Fn::Sub: ${NameBase}-privateSubnet2c
+     Name: !Sub ${NameBase}-privateSubnet2c
+     
