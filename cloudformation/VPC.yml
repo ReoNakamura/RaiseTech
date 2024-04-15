@@ -149,4 +149,3 @@ Outputs:
    Value: !Ref privateSubnet2c
    Export:
      Name: !Sub ${NameBase}-privateSubnet2c
-     
