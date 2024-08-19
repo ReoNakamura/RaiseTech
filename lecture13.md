@@ -17,10 +17,10 @@
 ## circleciの環境変数の設定
 
 ##### Project Settings
-![プロジェクトの設定](/RaiseTech/image/lecture13/circleciのプロジェクト設定.png)
+![プロジェクトの設定](image/lecture13/circleciのプロジェクト設定.png)
 
 ##### Enviroment Varisbles
-![環境変数の設定](/RaiseTech/image/lecture13/プロジェクト設定の環境変数.png)
+![環境変数の設定](image/lecture13/プロジェクト設定の環境変数.png)
 
 
 ## cirleci/comfig.ymlにansibleとserverspecの処理を追加する
