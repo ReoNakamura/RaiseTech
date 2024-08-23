@@ -1,7 +1,7 @@
 # 第5回課題
 * 組み込みサーバーで起動
 ![puma駆動](image/lecture05/puma起動.png)
-![puma起動確認](/image/lecture05/puma起動確認.png)
+![puma起動確認](image/lecture05/puma起動確認.png)
 * nginxとunicornで分けてデプロイ
 ![nginxとunicorn起動](image/lecture05/nginxとunicornの起動.png)
 ![接続確認](image/lecture05/nginxの接続確認.png)
