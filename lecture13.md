@@ -4,7 +4,7 @@
 
 <details><summary>デプロイ自動化構成図</summary>
 
-![構成図](/RaiseTech/image/lecture13/AWS.構成図.自動化処理図.drawio.png)
+![構成図](image/lecture13/AWS.構成図.自動化処理図.drawio.png)
 </details>
 
 　　

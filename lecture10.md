@@ -6,7 +6,7 @@
 VPC.YAML  
 EC2-RDS.YAML  
 の二分割で構成
-- テンプレートのコードをimage/lecture10/のCF-Templateファイルに保存
+- テンプレートのコードを[image/lecture10/のCF-Template](image/lecture10/CF-Template)ファイルに保存
 
 ## 構築した環境
 
