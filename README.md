@@ -1,4 +1,4 @@
-# RaiseTech AWSコース
+# RaiseTech AWSフルコース
 
 ## 概要
 
